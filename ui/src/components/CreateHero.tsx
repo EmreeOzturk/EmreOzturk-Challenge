@@ -18,7 +18,7 @@ export function CreateHero({ refreshKey, setRefreshKey }: RefreshProps) {
 
   const handleCreateHero = async () => {
     if (!account || !packageId || !name.trim() || !imageUrl.trim() || !power.trim()) return;
-    
+    console.log("ok")
     setIsCreating(true);
     
     const tx = createHero(packageId, name, imageUrl, power);
